@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+$primary_color: #09235c;
+$secondary_color: #f5ab00;
+$bold-blue: #101828;
+$max-width: 1024px;
+$primary_font: "Inter", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $primary_font;
+}
+
+.edge {
+  max-width: 1440px;
+  margin: auto;
+}
+.centralizador {
+  margin: auto;
+}
+.swiper {
+  width: 100%;
+  height: 500px;
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    font-weight: 700;
+  }
+  .swiper-button-prev {
+    margin-left: 30px !important;
+  }
+  .swiper-button-next {
+    margin-right: 30px;
+  }
+  .swiper-pagination-bullet-active {
+    background: $secondary_color;
+  }
+}
+
+@mixin image--description(
+  $h5_size,
+  $h5_weight,
+  $h5_color,
+  $h4_size,
+  $h4_weight,
+  $h4_color,
+  $p_size,
+  $p_weight,
+  $p_color,
+  $a_size,
+  $a_weight,
+  $a_color,
+  $a_background
+) {
+  h5 {
+    font-size: $h5_size;
+    font-weight: $h5_weight;
+    color: $h5_color;
+  }
+  h4 {
+    font-size: $h4_size;
+    font-weight: $h4_weight;
+    color: $h4_color;
+  }
+  p {
+    font-size: $p_size;
+    font-weight: $p_weight;
+    color: $p_color;
+  }
+  a {
+    font-size: $a_size;
+    font-weight: $a_weight;
+    color: $a_color;
+    background: $a_background;
+    border-radius: 8px;
+    text-decoration: none;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+main {
+  width: 100%;
+  background-color: #f9fafc;
+  //   border: thin solid transparent;
+  float: left;
+}

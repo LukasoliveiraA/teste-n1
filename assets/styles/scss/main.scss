@@ -1,0 +1,45 @@
+@import "base";
+@import "./modules/header";
+@import "./modules/banner";
+@import "./modules/benefits";
+@import "./modules/shelf";
+@import "./modules/mosaic";
+@import "./modules/about";
+@import "./modules/newsletter";
+@import "./modules/footer";
+//   Sobre a loja
+
+//   Newsletter
+
+// Responsivo
+
+// header
+
+@media screen and (max-width: 610px) {
+  .desktopOnly {
+    display: none;
+  }
+  .mobileOnly {
+    display: block;
+  }
+}
+@media screen and (min-width: 611px) {
+  .desktopOnly {
+    display: block;
+  }
+  .mobileOnly {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .topbar {
+    &-inner {
+      flex-direction: column !important;
+      justify-content: center;
+      .topbar__links {
+        display: none;
+      }
+    }
+  }
+}
