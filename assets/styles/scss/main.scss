@@ -7,13 +7,14 @@
 @import "./modules/about";
 @import "./modules/newsletter";
 @import "./modules/footer";
-//   Sobre a loja
+main {
+  width: 100%;
+  background-color: #f9fafc;
+  //   border: thin solid transparent;
+  float: left;
+}
 
-//   Newsletter
-
-// Responsivo
-
-// header
+// Configurações gerais de responsividade
 
 @media screen and (max-width: 610px) {
   .desktopOnly {
