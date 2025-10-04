@@ -1,0 +1,76 @@
+/* =====================
+   Base (Mobile: até 630px)
+===================== */
+.benefits {
+  width: 100%;
+  height: auto;
+
+  &__content {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    &--inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 70px;
+      margin-top: 15px;
+
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        color: #4a5565;
+        text-align: center;
+
+        span {
+          font-size: 16px;
+          font-weight: 500;
+          color: #101828;
+        }
+      }
+    }
+  }
+}
+
+/* =====================
+   Tablets e desktops (631px+)
+===================== */
+@media screen and (min-width: 631px) {
+  .benefits {
+    height: 93px;
+
+    &__content {
+      max-width: 95%;
+      width: 100%;
+      height: 93px;
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      flex-direction: row;
+
+      &--inner {
+        flex-direction: row !important;
+        align-items: center !important;
+
+        img {
+          margin-right: 10px;
+        }
+
+        p {
+          text-align: left;
+
+          span {
+            font-size: 16px;
+            font-weight: 500;
+            color: #101828;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,149 @@
+/* =====================
+   Base (Mobile: até 583px)
+===================== */
+.newsletter {
+  width: 100%;
+  height: auto; // altura automática para mobile
+  background-color: $primary_color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+
+  &__container {
+    max-width: 100%;
+    width: 100%;
+    height: auto; // altura automática para mobile
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h4 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    form {
+      max-width: 448px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+
+      input {
+        width: 100%;
+        max-width: 100%;
+        height: 35px;
+        border: none;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        outline: none;
+      }
+
+      button {
+        width: 100%;
+        max-width: 110px;
+        height: 35px;
+        background-color: $secondary_color;
+        color: $primary_color;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        align-self: center;
+      }
+    }
+  }
+}
+
+/* =====================
+   Tablets e desktops (584px+)
+===================== */
+@media screen and (min-width: 584px) {
+  .newsletter {
+    height: 230px;
+
+    &__container {
+      max-width: 670px;
+      width: 100%;
+      height: 135px;
+
+      form {
+        flex-direction: row;
+        justify-content: space-between;
+        input {
+          max-width: 330px;
+          width: 100%;
+        }
+
+        button {
+          width: 110px;
+        }
+      }
+    }
+  }
+}
+
+/* =====================
+   Modal de resultado da newsletter
+===================== */
+.newsletterModalResult {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    max-width: 320px;
+    width: 90%;
+    max-height: 300px;
+    height: 100%;
+    border: thin solid $primary_color;
+    background: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .baseLine {
+      margin-top: 15px;
+      padding: 20px;
+
+      p {
+        text-align: center;
+      }
+
+      button {
+        width: 140px;
+        height: 40px;
+        border: none;
+        background: $secondary_color;
+        color: $bold-blue;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+}

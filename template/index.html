@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeekStore</title>
+    <link rel="stylesheet" href="../build/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="edge">
+      <!-- Topbar -->
+      <div class="topbar">
+        <div class="topbar-inner centralizador">
+          <p>
+            Frete grátis acima de R$ 199 <span class="dot"> • </span> 12x sem
+            juros
+          </p>
+          <div class="topbar__links">
+            <a href="#">Minha Conta</a>
+            <a href="#">Atendimento</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Header -->
+      <!-- [ Header ] Desktop visivel a partir de 610px -->
+      <div class="desktopOnly">
+        <header class="header centralizador">
+          <div class="header__logo">
+            <span>GeekStore</span>
+          </div>
+          <div class="header__search">
+            <input
+              type="text"
+              placeholder="Buscar jogos, consoles, produtos geek..."
+            />
+            <button type="submit">
+              <img src="../build/images/Icon.svg" />
+            </button>
+          </div>
+          <div class="header__user">
+            <a href="#"><img src="../build/images/user.svg" /> Entrar</a>
+            <a href="#" class="cart">
+              <img src="../build/images/cart.svg" />
+              <span class="badge"
+                >Carrinho <span class="counter">0</span></span
+              ></a
+            >
+          </div>
+        </header>
+        <nav class="nav">
+          <div class="nav__inner centralizador">
+            <ul>
+              <li class="dropper">
+                <a href="javascript:void()" class="dropdown">
+                  Jogos
+                  <img src="../build/images/chevronDown.svg" />
+                  <div class="menuDropDown">
+                    <ul>
+                      <li link="?">Link</li>
+                      <li link="?">Link</li>
+                      <li link="?">Link</li>
+                      <li link="?">Link</li>
+                      <li link="?">Link</li>
+                    </ul>
+                  </div>
+                </a>
+              </li>
+              <li class="dropper">
+                <a href="javascript:void()" class="dropdown">
+                  Consoles
+                  <img src="../build/images/chevronDown.svg" />
+
+                  <div class="menuDropDown">
+                    <ul>
+                      <li link="?">Link</li>
+                      <li link="?">Link</li>
+                      <li link="?">Link</li>
+                      <li link="?">Link</li>
+                      <li link="?">Link</li>
+                    </ul>
+                  </div>
+                </a>
+              </li>
+              <li><a href="#">PC Gaming</a></li>
+              <li><a href="#">Colecionáveis</a></li>
+              <li><a href="#">Ofertas</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- [END ] Desktop visivel a partir de 610px -->
+      <!-- [Header ] mobile visivel inferior a 610px -->
+      <div class="mobileOnly">
+        <header class="header--mobile">
+          <div class="setHeaderPoints centralizador">
+            <div class="setHeaderPoints--container">
+              <button id="openMenu">
+                <img
+                  src="../build/images/menuIcon.svg"
+                  width="35"
+                  height="35"
+                />
+              </button>
+            </div>
+            <div class="setHeaderPoints--container">
+              <a href="?"><img src="../build/images/GeekStore.svg" alt="" /></a>
+            </div>
+          </div>
+          <div class="ls-hero">
+            <div class="ls-hero__block">
+              <div class="accountSets">
+                <a><img src="../build/images/user.svg" /> Entrar</a>
+              </div>
+              <div class="accountSets">
+                <a><img src="../build/images/cart.svg" /></a>
+                <span class="counter">0</span>
+              </div>
+            </div>
+            <div class="ls-hero__block centralizador">
+              <input type="text" placeholder="Buscar jogos, consoles..." />
+              <button id="search">
+                <img src="../build/images/Icon.svg" />
+              </button>
+            </div>
+          </div>
+          <nav class="nav--mobile">
+            <div class="nav--mobile--relativeContent">
+              <div class="nav--mobile--relativeContent__inner">
+                <div class="mobileNavigatorHeaderLogo">
+                  <img src="../build/images/GeekStore.svg" />
+                  <div class="closeMenu">
+                    <button id="closeMenu">
+                      <img
+                        src="../build/images/closeMenu.svg"
+                        alt=""
+                        width="25"
+                        height="25"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="acesso centralizador">
+                  <ul>
+                    <li><a href="?">Minha Conta</a></li>
+                    <li><a href="?">Atendimento</a></li>
+                  </ul>
+                </div>
+                <ul>
+                  <li class="collapseMenu">
+                    Jogos <img src="../build/images/chevronDown.svg" />
+                    <div class="mobile__colappseNav">
+                      <ul>
+                        <li><a href="">Link 1</a></li>
+                        <li><a href="">Link 2</a></li>
+                        <li><a href="">Link 3</a></li>
+                        <li><a href="">Link 4</a></li>
+                        <li><a href="">Link 5</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="collapseMenu">
+                    Consoles <img src="../build/images/chevronDown.svg" />
+                    <div class="mobile__colappseNav">
+                      <ul>
+                        <li><a href="">Link 1</a></li>
+                        <li><a href="">Link 2</a></li>
+                        <li><a href="">Link 3</a></li>
+                        <li><a href="">Link 4</a></li>
+                        <li><a href="">Link 5</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="?">PC Gaming</a></li>
+                  <li><a href="?">Colecionáveis</a></li>
+                  <li><a href="?">Ofertas</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+      </div>
+      <!-- [END ] mobile visivel inferior a 610px -->
+
+      <!-- Banner -->
+      <section class="banner">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+
+            <div class="swiper-slide">
+              <img
+                src="https://iili.io/KW6QKF9.png"
+                alt="Controle Xbox"
+                class="banner__img"
+              />
+              <div class="banner__content">
+                <span class="banner__tag">Os Melhores Jogos de 2024</span>
+                <h2>Novos Lançamentos</h2>
+                <p>
+                  Descubra os títulos mais esperados do ano com até 30% de
+                  desconto
+                </p>
+                <a href="#" class="btn">Ver Ofertas</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://iili.io/KW6QKF9.png"
+                alt="Controle Xbox"
+                class="banner__img"
+              />
+              <div class="banner__content">
+                <span class="banner__tag">Os Melhores Jogos de 2024</span>
+                <h2>Novos Lançamentos</h2>
+                <p>
+                  Descubra os títulos mais esperados do ano com até 30% de
+                  desconto
+                </p>
+                <a href="#" class="btn">Ver Ofertas</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://iili.io/KW6QKF9.png"
+                alt="Controle Xbox"
+                class="banner__img"
+              />
+              <div class="banner__content">
+                <span class="banner__tag">Os Melhores Jogos de 2024</span>
+                <h2>Novos Lançamentos</h2>
+                <p>
+                  Descubra os títulos mais esperados do ano com até 30% de
+                  desconto
+                </p>
+                <a href="#" class="btn">Ver Ofertas</a>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
+
+      <!-- Benefícios -->
+      <section class="benefits">
+        <div class="benefits__content centralizador">
+          <div class="benefits__content--inner">
+            <span><img src="../build/images/frete.svg" /></span>
+            <p><span>Frete Grátis</span><br />Acima de R$ 199</p>
+          </div>
+          <div class="benefits__content--inner">
+            <span><img src="../build/images/card.svg" /></span>
+            <p><span>12x sem Juros</span><br />No cartão de crédito</p>
+          </div>
+          <div class="benefits__content--inner">
+            <span><img src="../build/images/security.svg" /></span>
+            <p><span>Compra Segura</span><br />SSL e criptografia</p>
+          </div>
+          <div class="benefits__content--inner">
+            <span><img src="../build/images/sac.svg" /></span>
+            <p><span>Atendimento</span><br />Segunda a Sábado</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- MAIN -->
+    <main>
+      <!-- shelf -->
+      <div class="shelf__container centralizador">
+        <div class="shelf__container--header">
+          <div class="shelf__header--block centralizador">
+            <h2>Produtos em Destaque</h2>
+            <p>
+              Os melhores jogos e acessórios selecionados especialmente para
+              você
+            </p>
+          </div>
+        </div>
+        <div class="shelf__container--body">
+          <ul>
+            <!-- Inserção via Javascript -->
+          </ul>
+
+          <div class="loadMore__container">
+            <div class="loadMore__container--inner centralizador">
+              <a href="?">Ver todos os produtos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fim da Shelf -->
+      <!-- Mosaic Banner -->
+
+      <section class="mosaicBanner">
+        <div class="mosaicBanner__inner centralizador">
+          <div class="mosaicBanner__inner--block ignite">
+            <img src="https://iili.io/KW6Q2GS.png" alt="" />
+            <div class="image--description">
+              <h5>PS5 & Xbox Series X/S</h5>
+              <h4>Console Generation</h4>
+              <p>Os consoles mais poderosos da nova geração</p>
+              <a href="?">Ver Consoles</a>
+            </div>
+          </div>
+          <div class="mosaicBanner__inner--block ignite">
+            <div class="mosaic__splited">
+              <img src="https://iili.io/KW6Lbvs.png" alt="" />
+              <div class="image--description">
+                <h5>Nostalgia em Alta</h5>
+                <h4>Retro Gaming</h4>
+                <p>Clássicos que marcaram época</p>
+                <a href="?">Ver Consoles</a>
+              </div>
+            </div>
+            <div class="mosaic__splited">
+              <img src="https://iili.io/KW6QByb.png" alt="" />
+              <div class="image--description">
+                <h5>Performance Máxima</h5>
+                <h4>Acessórios Gaming</h4>
+                <p>Headsets, mouses e teclados pro</p>
+                <a href="?">Ver Acessórios</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Fim do Mosaic section -->
+
+      <!-- Descrição da loja -->
+
+      <section class="aboutStore">
+        <div class="aboutStore__container centralizador">
+          <div class="hero">
+            <h1>GeekStore - Sua Loja de Games e Produtos Geek</h1>
+            <p>
+              A maior variedade de jogos, consoles e acessórios com os melhores
+              preços do Brasil
+            </p>
+          </div>
+
+          <div class="ProductDescription">
+            <div class="ProductDescription__col">
+              <h3>Os Melhores Jogos e Consoles</h3>
+              <p>
+                Na GeekStore você encontra os lançamentos mais aguardados para
+                PlayStation 5, Xbox Series X/S, Nintendo Switch e PC. Nossa
+                seleção inclui desde os blockbusters AAA até indies exclusivos,
+                sempre com garantia oficial e os melhores preços.
+              </p>
+              <p>
+                Oferecemos também uma ampla gama de consoles, desde os últimos
+                lançamentos até clássicos retro para colecionadores. Todos os
+                produtos são originais e acompanham garantia do fabricante.
+              </p>
+            </div>
+
+            <div class="ProductDescription__col">
+              <h3>Acessórios e Produtos Geek</h3>
+              <p>
+                Complete seu setup gamer com nossos acessórios premium: headsets
+                com som surround, controles wireless de última geração, teclados
+                mecânicos, mouses gamers e muito mais. Tudo para elevar sua
+                experiência de jogo ao próximo nível.
+              </p>
+              <p>
+                Para os verdadeiros geeks, temos uma seção especial com
+                colecionáveis, action figures, estátuas, livros de arte e
+                merchandising oficial dos seus games favoritos. Produtos únicos
+                para fãs exigentes.
+              </p>
+            </div>
+          </div>
+
+          <div class="metricas">
+            <div class="metricas_content">
+              <h5>5000+</h5>
+              <p>Produtos Disponíveis</p>
+            </div>
+            <div class="metricas_content">
+              <h5>50k+</h5>
+              <p>Clientes Satisfeitos</p>
+            </div>
+            <div class="metricas_content">
+              <h5>99%</h5>
+              <p>Avaliações Positivas</p>
+            </div>
+            <div class="metricas_content">
+              <h5>24h</h5>
+              <p>Entrega Expressa</p>
+            </div>
+          </div>
+
+          <div class="SectionVantagens">
+            <h2>Por que escolher a GeekStore?</h2>
+            <div class="vantagens__grid">
+              <div class="vantagens__grid--content">
+                <span class="numberPosition first">1</span>
+                <h3>Preços Competitivos</h3>
+                <p>
+                  Trabalhamos com margens reduzidas para oferecer sempre os
+                  melhores preços.
+                </p>
+              </div>
+              <div class="vantagens__grid--content">
+                <span class="numberPosition">2</span>
+                <h3>Entrega Rápida</h3>
+                <p>
+                  Entrega expressa em todo Brasil com frete grátis acima de R$
+                  199.
+                </p>
+              </div>
+              <div class="vantagens__grid--content">
+                <span class="numberPosition">3</span>
+                <h3>Suporte Especializado</h3>
+                <p>
+                  Nossa equipe é formada por gamers que entendem suas
+                  necessidades.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fim da aboutStore -->
+
+      <!-- Newsletter -->
+
+      <section class="newsletter">
+        <div class="newsletter__container centralizador">
+          <h4>Fique por dentro das novidades</h4>
+          <p>
+            Receba primeiro as ofertas exclusivas, lançamentos e promoções
+            especiais
+          </p>
+          <form class="centralizador newsForm">
+            <input
+              id="newsletter"
+              type="email"
+              class="newsletterInput"
+              placeholder="Seu e-mail"
+            />
+            <button type="submit" class="newsletterAction">Inscrever</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer_wrapper centralizador">
+        <div class="footer-top">
+          <!-- About -->
+          <div class="footer-top--block footer-about">
+            <h3 class="footer-logo">GeekStore</h3>
+            <p class="footer-description">
+              Sua loja especializada em games, consoles e produtos geek.
+              Qualidade garantida e os melhores preços do mercado.
+            </p>
+            <div class="footer-socials">
+              <a href="#" aria-label="Facebook"
+                ><img src="../build/images/facebook.svg"
+              /></a>
+              <a href="#" aria-label="Instagram"
+                ><img src="../build/images/instagram.svg"
+              /></a>
+              <a href="#" aria-label="Twitter"
+                ><img src="../build/images/twitter.svg"
+              /></a>
+              <a href="#" aria-label="YouTube"
+                ><img src="../build/images/youtube.svg"
+              /></a>
+            </div>
+          </div>
+
+          <!-- Products -->
+          <nav class="footer-top--block footer-nav">
+            <h4 class="footer-title">Produtos</h4>
+            <ul>
+              <li><a href="#">PlayStation 5</a></li>
+              <li><a href="#">Xbox Series X/S</a></li>
+              <li><a href="#">Nintendo Switch</a></li>
+              <li><a href="#">PC Gaming</a></li>
+              <li><a href="#">Acessórios</a></li>
+              <li><a href="#">Colecionáveis</a></li>
+            </ul>
+          </nav>
+
+          <!-- Support -->
+          <nav class="footer-top--block footer-nav">
+            <h4 class="footer-title">Atendimento</h4>
+            <ul>
+              <li><a href="#">Central de Ajuda</a></li>
+              <li><a href="#">Como Comprar</a></li>
+              <li><a href="#">Trocas e Devoluções</a></li>
+              <li><a href="#">Garantia</a></li>
+              <li><a href="#">Frete e Entregas</a></li>
+              <li><a href="#">Formas de Pagamento</a></li>
+            </ul>
+          </nav>
+
+          <!-- Contact -->
+          <address class="footer-top--block footer-contact">
+            <h4 class="footer-title">Contato</h4>
+            <p><img src="../build/images/phone.svg" /> (11) 3000-0000</p>
+            <p>
+              <img src="../build/images/email.svg" /> contato@geekstore.com.br
+            </p>
+            <p>
+              <img src="../build/images/local.svg" /> Rua dos Gamers, 123<br />São
+              Paulo - SP<br />CEP: 01234-567
+            </p>
+
+            <div class="footer-hours">
+              <h5>Horário de Atendimento</h5>
+              <p>Segunda a Sexta: 8h às 18h</p>
+              <p>Sábado: 8h às 14h</p>
+            </div>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom--wrapper centralizador">
+          <p>&copy; 2024 GeekStore. All rights reserved.</p>
+          <nav class="footer-links">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+            <a href="#">Cookies</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal newsletter -->
+
+    <div class="newsletterModalResult">
+      <div class="newsletterModalResult__container">
+        <div class="baseLine">
+          <img src="../build/images/GeekStore.svg" />
+        </div>
+        <div class="baseLine">
+          <p id="message"></p>
+        </div>
+        <div class="baseLine">
+          <button id="closeModal">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../build/js/main.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

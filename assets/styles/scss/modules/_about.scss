@@ -1,0 +1,265 @@
+/* =====================
+   Base (Mobile: até 675px)
+===================== */
+.aboutStore {
+  width: 100%;
+  background-color: #ffffff;
+  border-top: thin solid #e5e7eb;
+
+  &__container {
+    width: 100%;
+    max-width: 335px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 0;
+
+    .hero {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      h1 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #101828;
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        color: #4a5565;
+        margin-top: 10px;
+        text-align: center;
+      }
+    }
+
+    .ProductDescription {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 30px;
+      padding: 20px;
+      box-sizing: border-box;
+
+      &__col {
+        max-width: 100%;
+        margin-top: 20px;
+
+        h3 {
+          font-size: 20px;
+          font-weight: 700;
+          color: $primary_color;
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          color: #4a5565;
+          margin-top: 25px;
+        }
+      }
+    }
+
+    .metricas {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      height: auto;
+      padding: 20px;
+      box-sizing: border-box;
+
+      &_content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        h5 {
+          font-size: 12px;
+          font-weight: 700;
+          color: $primary_color;
+        }
+
+        p {
+          font-size: 10px;
+          font-weight: 400;
+          color: #4a5565;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  .SectionVantagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9fafb;
+    border-radius: 10px;
+    height: auto;
+    padding-bottom: 35px;
+    margin-top: 30px;
+
+    h2 {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: 700;
+      color: $bold-blue;
+    }
+
+    .vantagens__grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 300px;
+      width: 100%;
+
+      &--content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+        max-width: 100%;
+
+        .numberPosition {
+          background-color: $primary_color;
+          color: #fff;
+          font-weight: 700;
+          font-size: 16px;
+          padding: 11px 16px;
+          border-radius: 100%;
+        }
+
+        h3 {
+          font-size: 16px;
+          font-weight: 500;
+          color: $bold-blue;
+          margin-top: 18px;
+        }
+
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          color: #4a5565;
+          text-align: center;
+          margin-top: 18px;
+        }
+      }
+    }
+  }
+}
+
+/* =====================
+   Tablets (676px - 710px)
+===================== */
+@media screen and (min-width: 676px) {
+  .aboutStore__container {
+    max-width: 515px;
+
+    .ProductDescription {
+      flex-direction: row;
+
+      &__col {
+        max-width: 335px;
+        margin-top: 0;
+      }
+    }
+  }
+
+  .vantagens__grid {
+    max-width: 500px;
+
+    &--content {
+      margin-top: 18px;
+    }
+  }
+}
+
+/* =====================
+   Pequenos desktops (711px - 1123px)
+===================== */
+@media screen and (min-width: 711px) {
+  .aboutStore__container {
+    max-width: 824px;
+    padding: 0px;
+
+    .ProductDescription {
+      &__col {
+        max-width: 335px;
+      }
+    }
+  }
+
+  .SectionVantagens {
+    .vantagens__grid {
+      max-width: 832px !important;
+      flex-direction: row !important;
+      justify-content: space-between !important;
+
+      &--content {
+        max-width: 261px !important;
+        margin-top: 20px !important;
+      }
+    }
+  }
+}
+
+/* =====================
+   Grandes desktops (1124px+)
+===================== */
+@media screen and (min-width: 1124px) {
+  .aboutStore__container {
+    max-width: 1110px;
+    margin-top: 70px;
+    padding-bottom: 70px;
+
+    .hero {
+      height: 80px;
+
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 18px;
+        margin-top: 20px;
+      }
+    }
+
+    .ProductDescription {
+      flex-direction: row;
+      justify-content: space-between;
+
+      &__col {
+        max-width: 515px;
+      }
+    }
+  }
+
+  .metricas {
+    height: 65px;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    &_content {
+      width: 200px;
+      height: 65px;
+      align-items: center !important;
+      justify-content: center !important;
+      flex-direction: column !important;
+
+      h5 {
+        font-size: 24px !important;
+      }
+
+      p {
+        font-size: 16px !important;
+      }
+    }
+  }
+}
