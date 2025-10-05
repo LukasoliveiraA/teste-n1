@@ -38,4 +38,4 @@
 
 <p>Como o "Adicionar" é feito de forma ilustrativa, pode ter cache no navegador não alterando. Recomendo recarregar com CTRL + SHIFT + R caso isso aconteça</p>
 <p>No Header adicionei pontos e links ilustrativos que não estavam previsto no layout</p>
-<p>As imagens do projeto estão hospedadas externamente por uma questão de otimização e velocidade de entrega. Em vez de compilar localmente, optei por URLs em CDN. <br/> “Como na VTEX as imagens já são servidas via CDN interna, eu optei por simular esse mesmo cenário no teste</p>
+<p>As imagens do projeto estão hospedadas externamente por uma questão de otimização e velocidade de entrega. Em vez de compilar localmente, optei por URLs em CDN. <br/> Como na VTEX as imagens já são servidas via CDN interna, eu optei por simular esse mesmo cenário no teste</p>
