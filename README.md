@@ -24,7 +24,7 @@
 <h3>Shelf:</h3>
 <p>Na seção de prateleira eu tomei a liberdade de inserir 5 produtos para diminuir os espaçamentos entre as grids em telas maiores e vai diminuindo conforme o tamanho da tela decai. Ao chegar 775px eu inseri botões para simular um slide que ao clicar muda os produtos da prateleira. Ao clicar em Adicionar, o botão muda para "Adicionado" e altera o total no carrinho no menu (Tanto no mobile quanto desktop)****</p>
 <h3>Mosaico:</h3>
-<p>Na seção de Mosaico desenvolvi de uma forma no mobile onde as imagens se colocam uma em baixo da outra que permite um enquadramento melhor das imagens na tela.</p>
+<p>Na seção de Mosaico desenvolvi de uma forma no mobile onde as imagens se colocam uma em baixo da outra que permite um enquadramento melhor das imagens na tela. Em telas maiores que 1440px optei por manter o os banners em posição original para seguir a grid do layout de referência espaçando um pouco os elementos.(Seguindo o layout de referencia cujo a tela é menor o espaçamento seria nas laterais)</p>
 <h3>Sobre a loja:</h3>
 <p>Na seção de sobre a loja, no mobile mantive os blocos um em baixo do outro para conseguir manter o tamanho da fonte legivel</p>
 <h3>Em Por que escolher a GeekStore?:</h3>
