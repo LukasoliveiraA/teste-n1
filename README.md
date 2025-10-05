@@ -1,7 +1,7 @@
 
 <h1>Teste N1</h1>
 <p>Desenvolvimento da loja GeekStore</p>
-<p><i>Altomação com Gulp</i></p>
+<p><i>Automação com Gulp</i></p>
 <h2>Pré Requisitos</h2>
 <p>Node</p>
 <h2>Quick Start</h2>
